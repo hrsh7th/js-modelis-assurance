@@ -20,13 +20,14 @@ assurance plugin for modelis.
 
 ```js
 var Modelis = require('modelis');
+var assurance = require('modelis-assurance');
 
 if (simple) {
   // define.
   var User = Modelis.define('User').attr('name', { assurance: { is: 'string' }});
 
   // use.
-  User.use(Modelis.plugins.assurance());
+  User.use(assurance());
 
   // User#assurance is available.
   new User({}).assurance();
@@ -37,7 +38,7 @@ if (customize) {
   var User = Modelis.define('User').attr('name', { validate: { is: 'string' }});
 
   // use.
-  User.use(Modelis.plugins.assurance({
+  User.use(assurance({
     attrOptionKey: 'validate'
   }, function(assurance) {
     this; //=> User.
