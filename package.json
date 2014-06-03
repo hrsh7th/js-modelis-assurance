@@ -1,0 +1,34 @@
+{
+  "name": "modelis-assurance",
+  "version": "0.0.1",
+  "description": "assurance plugin for modelis.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hrsh7th/js-modelis-assurance.git"
+  },
+  "keywords": [
+    "modelis-plugin",
+    "assurance"
+  ],
+  "author": "hrsh7th <hrsh7th@gmail.com> (https://github.com/hrsh7th)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hrsh7th/js-modelis-assurance/issues"
+  },
+  "homepage": "https://github.com/hrsh7th/js-modelis-assurance",
+  "dependencies": {
+    "assurance": "^0.2.4",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.0",
+    "modelis": "0.0.8"
+  }
+}
