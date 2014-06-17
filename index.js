@@ -12,7 +12,7 @@ module.exports = function(option, callback) {
   });
   callback = _.isFunction(callback) ? callback : defaults;
 
-  return function() {
+  return function assurance() {
     callback.call(this, create(this, option));
   };
 
